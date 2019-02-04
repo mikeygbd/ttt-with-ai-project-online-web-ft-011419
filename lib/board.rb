@@ -44,6 +44,7 @@ class Board
         if i == " "
         count += 1
       end
+      end
       count
 
     end

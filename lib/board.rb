@@ -31,8 +31,8 @@ class Board
   end
 
     def full?
-      if @cells.detect do |i|
-        i == " " || i == nil
+      if @cells.detect { |i| i == " " || i == nil}
+
         false
       else
         true

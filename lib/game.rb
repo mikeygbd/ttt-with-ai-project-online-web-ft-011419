@@ -1,6 +1,6 @@
 class Game
   attr_accessor
-  attr_reader
+  attr_reader :board
   WIN_COMBINATIONS = [
   [0,1,2],
   [3,4,5],

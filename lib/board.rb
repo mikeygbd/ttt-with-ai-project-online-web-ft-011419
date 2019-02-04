@@ -40,7 +40,8 @@ class Board
     end
     def turn_count
       count = 0
-      if @cells.detect {|i| i == " "}
+     @cells.each do |i|
+        if i == " "
         count += 1
       end
       count

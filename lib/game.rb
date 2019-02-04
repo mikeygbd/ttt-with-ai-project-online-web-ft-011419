@@ -46,8 +46,16 @@ class Game
       combination
       else
       false
+      end
     end
   end
+
+  def draw?
+    if won?
+      false
+    elsif  @board.full? && !won
+      true
+    end
 
   end
 

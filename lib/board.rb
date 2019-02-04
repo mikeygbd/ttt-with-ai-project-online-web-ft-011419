@@ -28,9 +28,17 @@ class Board
   def update(position, player)
      pos = position.to_i
      @cells[pos - 1] = player.token
-
-
   end
+
+    def full?
+      if @cells.detect do |i|
+        i == " " || i == nil
+        false
+      else
+        true
+      end
+
+    end
 
 
 

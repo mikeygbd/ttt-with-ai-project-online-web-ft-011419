@@ -31,4 +31,24 @@ class Game
     end
   end
 
+  def won?
+    WIN_COMBINATIONS.detect do |combination|
+    win_1 = combination[0]
+    win_2 = combination[1]
+    win_3 = combination[2]
+    pos_1 = board.cells[win_1]
+    pos_2 = board.cells[win_2]
+    pos_3 = board.cells[win_3]
+
+      if pos_1 == "X" && pos_2 == "X" && pos_3 == "X"
+      combination
+      elsif pos_1 == "O" && pos_2 == "O" && pos_3 == "O"
+      combination
+      else
+      false
+    end
+  end
+
+  end
+
 end

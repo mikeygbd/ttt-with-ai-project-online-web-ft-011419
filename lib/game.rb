@@ -53,7 +53,7 @@ class Game
   def draw?
     if won?
       false
-    elsif  @board.full? && !won
+    elsif  @board.full? && !won?
       true
     end
 

@@ -4,8 +4,6 @@ class Board
 
   def initialize
     reset!
-    # @cells = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-
   end
 
   def reset!
@@ -32,12 +30,12 @@ class Board
 
     def full?
       if @cells.detect { |i| i == " " || i == nil}
-
         false
       else
         true
       end
     end
+
     def turn_count
       count = 0
      @cells.each do |i|

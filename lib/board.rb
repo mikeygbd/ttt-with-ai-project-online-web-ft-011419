@@ -57,8 +57,16 @@ class Board
       else
         true
       end
+    end
 
-
+    def valid_move?(input)
+      # if input.length < 2
+      position = input.to_i
+      if taken?(position)
+        false
+      else
+        true
+      end
     end
 
 

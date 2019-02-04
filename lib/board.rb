@@ -46,6 +46,18 @@ class Board
         end
       end
       count
+    end
+
+    def taken?(position)
+      pos = position.to_i - 1
+      if @cells[pos] == " " || @cells[pos] == ""
+        false
+      elsif @cells[pos] == nil
+        false
+      else 
+        true
+      end
+      
 
     end
 

@@ -81,12 +81,12 @@ class Game
     end
   end
 
-  def turn 
+  def turn
     player = current_player
   end
 
 
 
-  
+
 
 end

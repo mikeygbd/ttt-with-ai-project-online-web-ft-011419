@@ -61,7 +61,7 @@ class Game
   def over?
     if @board.full?
       true
-    else 
+    else
       false
     end
 

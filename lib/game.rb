@@ -63,6 +63,24 @@ class Game
   end
 
   def winner
+    o_count = 0
+    x_count = 0
+    @board.cells.each do |i|
+      if i == "X"
+        x_count += 1
+      elsif i == "O"
+        o_count += 1
+      end
+    end
+    if x_count > o_count
+      "X"
+    elsif x_count < o_count
+      "O"
+    else
+      nil
+    end
+  end
+
 
 
   end

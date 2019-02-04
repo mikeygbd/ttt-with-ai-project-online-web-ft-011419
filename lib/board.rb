@@ -38,7 +38,14 @@ class Board
         true
       end
     end
+    def turn_count
+      count = 0
+      if @cells.detect {|i| i == " "}
+        count += 1
+      end
+      count
 
+    end
 
 
 end

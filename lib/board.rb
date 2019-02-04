@@ -68,6 +68,7 @@ class Board
         true
       end
     end
+  end
 
 
 end

@@ -6,6 +6,6 @@ class Human < Player
     puts "please enter your selection:"
     input = gets.chomp
     input
+    end
   end
-end
 end

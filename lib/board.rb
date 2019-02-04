@@ -41,9 +41,9 @@ class Board
     def turn_count
       count = 0
      @cells.each do |i|
-        if i == " "
+        if i != " "
         count += 1
-      end
+        end
       end
       count
 

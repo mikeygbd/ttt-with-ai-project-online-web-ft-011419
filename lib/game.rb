@@ -92,6 +92,7 @@ class Game
   end
 
   def play
+    input = gets.chomp
 
   end
 

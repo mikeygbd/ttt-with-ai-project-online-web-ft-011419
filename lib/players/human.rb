@@ -7,5 +7,6 @@ class Human < Player
     input = gets.chomp
     input
   end
+end
 
 end

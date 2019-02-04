@@ -56,6 +56,14 @@ class Game
     elsif  @board.full? && !won?
       true
     end
+  end
+
+  def over?
+    if @board.full?
+      true
+    else 
+      false
+    end
 
   end
 

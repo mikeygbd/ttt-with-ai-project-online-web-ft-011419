@@ -4,7 +4,7 @@ class Board
 
   def initialize
     reset!
-    @cells = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+    # @cells = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
   end
 

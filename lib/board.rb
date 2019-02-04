@@ -36,7 +36,6 @@ class Board
         false
       else
         true
-        end
       end
     end
 

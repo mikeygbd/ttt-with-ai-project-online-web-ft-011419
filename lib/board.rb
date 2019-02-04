@@ -54,10 +54,10 @@ class Board
         false
       elsif @cells[pos] == nil
         false
-      else 
+      else
         true
       end
-      
+
 
     end
 

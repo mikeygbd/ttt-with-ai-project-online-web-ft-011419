@@ -19,12 +19,14 @@ class Board
     puts " #{@cells[6]} | #{@cells[7]} | #{@cells[8]} "
   end
 
-  def position
-    input = gets.chomp.to_i
-    @cells[input-1]
+  def position(input)
+    i = input.to_i
+    @cells[i-1]
   end
 
   def update(position, player)
+     pos = position.to_i
+     @cells[pos - 1] = player.token
 
 
   end

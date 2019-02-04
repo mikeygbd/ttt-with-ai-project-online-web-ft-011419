@@ -8,5 +8,4 @@ class Human < Player
     input
   end
 end
-
 end

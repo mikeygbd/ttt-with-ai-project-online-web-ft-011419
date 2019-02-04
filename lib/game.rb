@@ -1,4 +1,5 @@
 class Game
+
   attr_accessor :board, :player_1, :player_2
 
   WIN_COMBINATIONS = [
@@ -39,7 +40,6 @@ class Game
     pos_1 = board.cells[win_1]
     pos_2 = board.cells[win_2]
     pos_3 = board.cells[win_3]
-
       if pos_1 == "X" && pos_2 == "X" && pos_3 == "X"
       combination
       elsif pos_1 == "O" && pos_2 == "O" && pos_3 == "O"

@@ -22,4 +22,13 @@ class Game
     @board
   end
 
+  def current_player
+  n = board.turn_count
+  if n%2 == 0
+    player_1
+  else
+    player_2
+    end
+  end
+
 end
